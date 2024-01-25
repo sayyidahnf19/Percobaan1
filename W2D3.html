@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* vertikal */
+        .flex-container {
+            display: flex;
+            background-color: dodgerblue;
+            /* yang buat vertikal */
+            flex-direction: column;
+            /* kalau column-reverse membalikkan urutan yang semula 123456 jadi 654321 */
+            /* flex-wrap : wrap; gunanya untuk responsive jika layar diperkecil auto ke bawah */
+        }
+        .flex-div{
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- copy alt + shift + up/down -->
+    <div class="flex-container">
+        <div class="flex-div">1</div>
+        <div class="flex-div">2</div>
+        <div class="flex-div">3</div>
+        <div class="flex-div">4</div>
+        <div class="flex-div">5</div>
+        <div class="flex-div">6</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+</html>
